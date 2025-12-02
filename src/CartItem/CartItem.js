@@ -51,7 +51,7 @@ module.exports = class CartItem {
 
     set price(value) {
         //TODO Implement this method
-        this.#_price = value;
+        this.#_price = this.#validatePrice(value);
     }
 
     get total() {
